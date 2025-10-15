@@ -1,0 +1,48 @@
+body{
+    background: linear-gradient(50deg, rgb(0, 136, 255),rgb(190, 22, 240) , rgb(84, 84, 238) , rgb(153, 7, 244) );
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+section{
+    width: 80vw;
+    height: 400px;
+    margin: 70px auto;
+    background-color: rgb(3, 3, 96);
+    border: 8px dashed white;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+div{
+    width: 120px;
+    height: 120px;
+    background-color: antiquewhite;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    animation: ballx 10s linear infinite ,
+    bally 1s ease-out 0s infinite alternate;
+}
+
+@keyframes ballx {
+    from{
+       bottom: 0%;
+    }
+
+    to{
+        left: 100%;
+    }
+}
+
+@keyframes bally {
+    from{
+        bottom: 0%;
+    }
+
+    to{
+        bottom: 60%;
+    }
+}
